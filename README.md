@@ -27,8 +27,36 @@ Ensure you have the following installed:
    ```bash
    cd CAU-AID-Class
    ```
-3. Install required libraries:
+
+## Usage
+1. Run the script:
    ```bash
-   pip install pandas scikit-learn
+   python knn_iris-classifier.py
    ```
-4. Ensure the `iris.csv` dataset is available in the project directory.
+2. Entere the number of neighbors (`k`) when prompted.
+3. View the models accuracy and balanced accuracy in the concole.
+4. Input `sepal.length` and `petal.length` in the format `value1, value2` to predict the iris species.
+
+
+## Example
+**Console Interaction:**
+   ```bash
+   Enter the number of neighbors (k) for KNN: 3
+   Model Accuracy: 0.95
+   Balanced Accuracy: 0.96
+   Enter the sepal.length and petal.length for the iris in                        
+   theformat'sepal_length,petal_length': 5.1,1.8
+   Predicted Label:  Setosa
+   ```
+## Notes
+- Ensure that the input for predictions is numeric and follows the correct format (`value1,value2`).
+- Modify the dataset loading path in the script if necessary.
+
+## License
+This project is licensed under the [MIT License](https://streamlit.io/cloud)
+   ```bash
+   ```
+
+**Author**
+
+Developed by [Joonho](https://streamlit.io/cloud)
